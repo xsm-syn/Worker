@@ -885,15 +885,15 @@ Vless Account Already to Use
 ------------------------------------------------
 Domain : {domain}
 Uuid : {idnya}
-Port : {portnya}\n
+Port : {portnya}
 ------------------------------------------------
 Vless TLS : {vless_config_html}\n
-Vless NTLS : {non_tls_config_html}\n
+Vless NTLS : {non_tls_config_html}
 ------------------------------------------------
 Account Url : {link_worker}\n
 Subs Link : {sub_link}
 ------------------------------------------------
-Created by  : @after_sweet
+Bot By  : @after_sweet
 """         
             menu_markup = InlineKeyboardMarkup()
             add_user_button = InlineKeyboardButton("Add User", callback_data="add_user")
