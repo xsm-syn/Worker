@@ -110,7 +110,7 @@ sudo systemctl status cfwbot
 4. in your Dashboard section Select Files and and Click on "Open Bash Console Here"
 5.  Clone this repository:
  ```bash
- git clone https://github.com/xsm-syn/CFW-BOT.git
+ git clone https://github.com/xsm-syn/Worker.git
 ```
 6. Navigate to the project directory:
 
