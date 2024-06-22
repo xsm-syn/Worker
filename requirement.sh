@@ -1,11 +1,30 @@
 #!/bin/bash
 
-pip install telebot --user
-pip install pytelegrambotapi --upgrade --user
-pip install qrcode[pil] --user
-pip install requests --user
-pip install python-dotenv --user
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+package_installed() {
+    dpkg -s "$1" &> /dev/null
+}
+
+if ! package_installed telebot; then
+    pip install telebot --user
+fi
+
+if ! package_installed pytelegrambotapi; then
+    pip install pytelegrambotapi --upgrade --user
+fi
+
+if ! package_installed qrcode; then
+    pip install qrcode[pil] --user
+fi
+
+if ! package_installed requests; then
+    pip install requests --user
+fi
+
+if ! package_installed python-dotenv; then
+    pip install python-dotenv --user
+fi
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 . ~/.nvm/nvm.sh
 
