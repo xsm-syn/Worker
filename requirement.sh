@@ -24,7 +24,7 @@ if ! package_installed python-dotenv; then
     pip install python-dotenv --user
 fi
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 . ~/.nvm/nvm.sh
 
