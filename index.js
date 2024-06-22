@@ -550,7 +550,7 @@ Vless WS with IP
 ${VlessSec}
 \n<button onclick='copyToClipboard("${VlessSec}")'><i class="fa fa-clipboard"></i> Copy VlessSec</button>
 ---------------------------------------------
-Copyright 2024 @after_sweet
+Copyright 2024 by @after_sweet
 `;
 	}).join('\n');
 	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
